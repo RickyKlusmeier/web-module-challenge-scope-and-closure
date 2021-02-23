@@ -88,9 +88,17 @@ function finalScore(inningFunc, played){
     let home = 0;
     let away = 0;
     for (let i =0; i <= played; i++) {
-      
+      home += inningFunc();
+      away += inningFunc();
     }
+    return {
+      "Home": home,
+      "Away": away,
+    };
 }
+
+console.log(finalScore(inning, 9))
+
 
 /* ⚾️⚾️⚾️ Task 4: getInningScore() ⚾️⚾️⚾️
 Use the getInningScore() function below to do the following:
