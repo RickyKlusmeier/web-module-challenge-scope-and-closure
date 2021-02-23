@@ -69,7 +69,7 @@ function inning(){
     return Math.floor(Math.random()*3);
 }
 
-
+console.log(inning);
 /* ⚾️⚾️⚾️ Task 3: finalScore() ⚾️⚾️⚾️
 Use the finalScore function below to do the following:
   1. Receive the callback function `inning` that was created in Task 2 
@@ -97,7 +97,7 @@ function finalScore(inningFunc, played){
     };
 }
 
-console.log(finalScore(inning, 9))
+console.log(finalScore(inning, 9));
 
 
 /* ⚾️⚾️⚾️ Task 4: getInningScore() ⚾️⚾️⚾️
@@ -112,7 +112,7 @@ function getInningScore(inningFunc) {
   };
 }
 
-console.log(finalScore(inning)
+console.log(finalScore(inning));
 
 
 
