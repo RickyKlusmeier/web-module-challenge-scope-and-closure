@@ -28,11 +28,14 @@ console.log(processFirstItem(['foo','bar'],function(str){return str+str}));
   Study the code for counter1 and counter2, then answer the questions below.
   
   1. What is the difference between counter1 and counter2?
+
+  Counter1 has the count variable inside of the function so it cannot be altered outside of the function and uses a nested funciton. Counter2 has the count variable outside of the function and uses only 1 function. 
   
   2. Which of the two uses a closure? How can you tell?
+  Counter1 uses closure becuase it uses two functions nested inside of each other. 
   
   3. In what scenario would the counter1 code be preferable? In what scenario would 
-     counter2 be better?  
+     counter2 be better?  Counter1 would be used for when the count would need to start at zero every time its run and counter2 for when the variable will need to start from its last value when the function is called.
 */
 
 // counter1 code
@@ -62,8 +65,8 @@ Use the inning function below to do the following:
 NOTE: This will be a callback function for the tasks below
 */
 
-function inning(/*Code Here*/){
-    /*Code Here*/
+function inning(){
+    return Math.floor(Math.random()*3);
 }
 
 
@@ -81,8 +84,12 @@ Use the finalScore function below to do the following:
 }
 */ 
 
-function finalScore(/*code Here*/){
-  /*Code Here*/
+function finalScore(inningFunc, played){
+    let home = 0;
+    let away = 0;
+    for (let i =0; i <= played; i++) {
+      
+    }
 }
 
 /* ⚾️⚾️⚾️ Task 4: getInningScore() ⚾️⚾️⚾️
